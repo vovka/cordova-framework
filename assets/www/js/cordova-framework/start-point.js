@@ -3,14 +3,14 @@ var CordovaFramework = {
 };
 
 define([
-	'vendors/cordova-2.0.0'
+	'../vendors/cordova-2.0.0'
 	, './requirements'
 ], function(){
 	var Application = {
 		initialize: function(applicationMainNamespace){
 			var applicationObject = window[applicationMainNamespace];
 			applicationObject.mainNamespaceName = applicationMainNamespace;
-			applicationObject.basePath = applicationMainNamespace.toLowerCase();
+			applicationObject.basePath = '../../' + applicationMainNamespace.toLowerCase();
 
 			applicationObject.Application.Requirements.load(applicationObject
 				// The second parameter will be executed in the
