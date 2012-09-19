@@ -4,7 +4,12 @@ var CordovaFramework = {
 
 define([
 	'../vendors/cordova-2.0.0'
-	, './requirements'
+	, './application/requirements'
+
+	//
+	// Add here requirements of all the necessary framework files.
+	//
+
 ], function(){
 	var Application = {
 		initialize: function(applicationMainNamespace){
